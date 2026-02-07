@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Caetano Neto - Site pessoal">
+  <title>Caetano Neto</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <style>
+    html {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: url(./Assets/cn@4k.jpg) center center / cover no-repeat;
+    }
+
+    header {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      padding: 0;
+    }
+
+    nav ul li {
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #eee;
+    }
+
+    nav ul li:first-child {
+      border-left: none;
+    }
+
+    nav ul li:last-child {
+      border-right: none;
+    }
+
+    a {
+      color: #666;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px 20px;
+      text-transform: uppercase;
+      transition: 1s all;
+    }
+
+    a:hover {
+      color: #000;
+      background-color: rgba(0, 0, 0, .05);
+    }
+
+    @media screen and (max-width:800px) {
+      body{
+        background: url(./Assets/cn@mobile.jpg) center center / cover no-repeat;
+      }
+      nav ul li {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Caetano Neto</h1>
+  </header>
+  <footer>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://br.linkedin.com/pub/caetano-neto/42/59a/424" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://lattes.cnpq.br/4302945893525144" target="_blank" rel="noopener noreferrer">Lattes CNPq</a>
+        </li>
+        <li><a href="mailto:caetano@caetanoneto.com.br" aria-label="Enviar email para Caetano Neto">Email</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>

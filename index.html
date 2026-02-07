@@ -5,8 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Caetano Neto - Site pessoal">
+  <meta name="theme-color" content="#333333">
+  <meta property="og:title" content="Caetano Neto">
+  <meta property="og:description" content="Caetano Neto - Site pessoal">
+  <meta property="og:image" content="https://caetanoneto.com.br/Assets/cn@4k.jpg">
+  <meta property="og:type" content="website">
   <title>Caetano Neto</title>
   <link rel="icon" href="data:,">
+  <link rel="preload" as="image" href="./Assets/cn@4k.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
@@ -61,18 +67,30 @@
       border-right: none;
     }
 
+    footer {
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
     a {
       color: #666;
       text-decoration: none;
       display: inline-block;
       padding: 5px 20px;
       text-transform: uppercase;
-      transition: 1s all;
+      transition: 0.3s all;
     }
 
     a:hover {
       color: #000;
       background-color: rgba(0, 0, 0, .05);
+    }
+
+    a:focus-visible {
+      outline: 2px solid #666;
+      outline-offset: 2px;
+      border-radius: 2px;
     }
 
     @media screen and (max-width:800px) {
